@@ -1,0 +1,8 @@
+namespace FBSkill;
+
+table FBSkill {
+  type:string;
+  playerid:string;
+  skillID:int
+
+}

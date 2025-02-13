@@ -1,0 +1,8 @@
+namespace RoomPlayer.Sample;
+
+table Roomplayer {
+  name:string;
+  mana:int;
+  hp:int;
+}
+root_type Roomplayer;

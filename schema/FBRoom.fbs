@@ -1,0 +1,7 @@
+namespace FBRoom;
+
+table FBroom {
+  type:string;
+  namejoin:string;
+}
+root_type FBroom;

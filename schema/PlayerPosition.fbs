@@ -1,0 +1,21 @@
+namespace PlayerPosition;
+
+
+struct Vec3 {
+  x:float;
+  y:float;
+  z:float;
+}
+
+table playerPosition {
+  type:string;
+  playerid:string;
+  isjump:bool;
+  isfalling:bool;
+  pos:Vec3;
+  rot:Vec3;
+  velocityvector:Vec3;
+  velocityvalue:float;
+
+}
+root_type playerPosition;

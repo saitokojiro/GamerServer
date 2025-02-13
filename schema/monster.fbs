@@ -1,0 +1,8 @@
+namespace monster.Sample;
+
+table Monster {
+  name:string;
+  mana:int;
+  hp:int;
+}
+root_type Monster;

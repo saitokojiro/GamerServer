@@ -1,0 +1,8 @@
+namespace FBPlayerdata.Sample;
+
+table FBPlayerData {
+  type:string;
+  name:string;
+}
+
+root_type FBPlayerData;

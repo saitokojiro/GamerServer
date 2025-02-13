@@ -1,0 +1,8 @@
+namespace disconnectplayer;
+
+table DisconnectPlayer {
+  type:string;
+  name:string;
+}
+
+root_type DisconnectPlayer;

@@ -1,0 +1,21 @@
+{
+  "name": "gameserver",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.7.9",
+    "electron": "33.0.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.0",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "flatbuffers": "^24.3.25",
+    "tsc": "^2.0.4",
+    "webview-bun": "^2.3.0"
+  }
+}

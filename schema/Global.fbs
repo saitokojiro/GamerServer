@@ -1,0 +1,7 @@
+namespace Global.Sample;
+
+table global {
+  type:string;
+  nom:int;
+}
+root_type global;
