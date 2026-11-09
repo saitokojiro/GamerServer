@@ -1,0 +1,17 @@
+namespace navMesh.Sample;
+
+table Vec3f {
+  x: float;
+  y: float;
+  z: float;
+}
+
+table NavMesh {
+  type:string;
+  zone: string;
+  uuid: string;
+  start: Vec3f;
+  end: Vec3f;
+  points: [Vec3f];  // Liste de points
+}
+root_type NavMesh;

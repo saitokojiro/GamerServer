@@ -1,3 +1,5 @@
+import type { ISMonsterEntity } from "./ISMonster";
+
 export interface ISUser {
 
     type: string,
@@ -47,3 +49,9 @@ export interface ISRoom {
 }
 
 export let UserList: ISUserUdp[];
+
+export  interface SocketData {
+    sessionId: string;
+    lastMessage: any;
+    monster: ISMonsterEntity[];
+}

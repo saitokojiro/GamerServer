@@ -1,8 +1,9 @@
-import { playerPosition } from "../../../schema/player-position/sample";
+import { playerPosition } from "../../../schemaServer/player-position/sample";
 import type { ISUser } from "../../Interface/ISGlobal"
 //import { position } from "../UDP/position";
 import * as flatbuffers from 'flatbuffers';
-import { Vec3 } from './../../../schema/player-position/sample/vec3';
+import { Vec3 } from '../../../schemaServer/player-position/sample/vec3';
+import { multiplicateur } from "./utils";
 //import { position } from './../UDP/position';
 
 
@@ -85,15 +86,13 @@ export let PositionTcp = (socket: any, message: any, USocket: Map<string, any>) 
         //socket.write(JSON.stringify(data))
         USocket.forEach((el, key) => {
 
-
+               // console.log("position :" + "X: " + message.position.x() / multiplicateur + " Y: " + message.position.y() + " Z: " + message.position.z()/ multiplicateur)
             if (el.data.sessionId != message.id) {
 
                 // el.write(JSON.stringify(data))
                 //el.write()
 
-                console.log("position :" + "X: " + message.position.x() + " Y: " + message.position.y() + " Z: " + message.position.z())
-                console.log("position :" + "X: " + message.rotation.x() + " Y: " + message.rotation.y() + " Z: " + message.rotation.z())
-                console.log("position :" + "X: " + message.velocityvector.x() + " Y: " + message.velocityvector.y() + " Z: " + message.velocityvector.z())
+                
 
                 el.write(PositionPlayer(message.id, "position",
                     {

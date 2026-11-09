@@ -1,7 +1,7 @@
-import { playerPosition } from "../../../schema/player-position/sample";
+import { playerPosition } from "../../../schemaServer/player-position/sample";
 import type { ISUser } from "../../Interface/ISGlobal"
 import * as flatbuffers from 'flatbuffers';
-import { Vec3 } from './../../../schema/player-position/sample/vec3';
+import { Vec3 } from '../../../schemaServer/player-position/sample/vec3';
 
 
 let PositionPlayer = (name: string, type: string, position: any) => {

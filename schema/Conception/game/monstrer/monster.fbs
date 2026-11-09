@@ -1,0 +1,30 @@
+namespace monster;
+
+table Vec3 {
+  x: float;
+  y: float;
+  z: float;
+}
+
+table Monster {
+  type:string;
+  playerid:string;
+  name:string;
+  hp: int;
+  mp: int;
+  lv: int;
+  exp: float;
+
+  zone: string;
+  isjump:bool;
+  isfalling:bool;
+  posorigine:Vec3;
+  pos:Vec3;
+  postarget:Vec3;
+  rot:Vec3;
+  distanceremanining: float;
+  velocityvector:Vec3;
+  velocityvalue:float;
+
+}
+root_type Monster;

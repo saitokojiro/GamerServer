@@ -1,0 +1,27 @@
+namespace character.Sample;
+
+table Vec3 {
+  x: float;
+  y: float;
+  z: float;
+}
+
+table Character {
+  type:string;
+  playerid:string;
+  name:string;
+  hp: int;
+  mp: int;
+  lv: int;
+  exp: float
+
+  zone: string;
+  isjump:bool;
+  isfalling:bool;
+  pos:Vec3;
+  rot:Vec3;
+  velocityvector:Vec3;
+  velocityvalue:float;
+
+}
+root_type Character;

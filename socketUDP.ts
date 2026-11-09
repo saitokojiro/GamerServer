@@ -6,9 +6,9 @@ import { PlayersPosition, position } from "./src/network/UDP/position"
 
 
 import * as flatbuffers from 'flatbuffers';
-import { FBPlayerData } from './schema/fbplayerdata/sample';
-import { playerPosition } from "./schema/player-position/sample";
-import { FBroom } from "./schema/fbroom/sample";
+import { FBPlayerData } from './schemaServer/fbplayerdata/sample';
+import { playerPosition } from "./schemaServer/player-position/sample";
+import { FBroom } from "./schemaServer/fbroom/sample";
 import { close } from "./src/network/UDP/close"
 
 let msgServer = async () => {
@@ -80,7 +80,7 @@ let playerId = (name: string, type: string) => {
 let ULooper: any;
 
 Bun.udpSocket({
-    hostname: "127.0.0.1",
+    hostname: "192.168.1.61",
     port: 3302,
     socket: {
         async data(socket, buf, port, addr) {
@@ -101,7 +101,7 @@ Bun.udpSocket({
                   arrayUser.forEach((value, key) => console.log("Player connected : " + value.user))
               }*/
 
-            /*if (!ULooper) {
+            if (!ULooper) {
                 ULooper = setInterval(() => {
 
                     arrayUser.forEach((value, key) => {
@@ -116,7 +116,7 @@ Bun.udpSocket({
                         ULooper = null;
                     }
                 }, 500)
-            }*/
+            }
 
 
 

@@ -1,0 +1,3 @@
+.\flatc_old.exe --ts -o ..\schemaServer\  .\Conception\game\monstrer\monster.fbs
+.\flatc_old.exe --cpp -o .\render\cpp\  .\Conception\game\monstrer\monster.fbs
+.\flatc_old.exe --csharp -o .\render\cpp\  .\Conception\game\monstrer\monster.fbs

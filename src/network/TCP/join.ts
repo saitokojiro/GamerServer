@@ -1,6 +1,6 @@
 //import { sendWithDelay } from "../../global";
 import * as flatbuffers from 'flatbuffers';
-import { FBroom } from "../../../schema/fbroom/sample";
+import { FBroom } from "../../../schemaServer/fbroom/sample";
 
 
 export let connectedSockets = new Set();
